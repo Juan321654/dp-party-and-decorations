@@ -1,0 +1,17 @@
+.navbar__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  box-shadow: inset 0px 0px 1px 0px;
+  padding: var(--padding);
+}
+
+.navbar__links a, a:hover, a:focus, a:active{
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+.navbar__links a:hover{
+  color: var(--color-dark);
+}

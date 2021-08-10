@@ -1,38 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka+One&family=Pacifico&display=swap');
+
+.App > h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* max-width: 80%; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+:root {
+  --dark-shades: #070709;
+  --light-shades: #EEE7E4;
+  --color-light: #E0918D;
+  --color-mid: #D37163;
+  --color-dark: #BF5552;
+  --padding: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  background-color: var(--light-shades);
+  /* font-family: 'Chewy', cursive; */
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Fredoka One', cursive;
 }
