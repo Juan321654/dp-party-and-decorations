@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka+One&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .App > h1, h2, h3, h4, h5, p {
   margin: 0;
@@ -24,5 +25,6 @@ body{
   background-color: var(--light-shades);
   /* font-family: 'Chewy', cursive; */
   /* font-family: 'Pacifico', cursive; */
-  font-family: 'Fredoka One', cursive;
+  /* font-family: 'Fredoka One', cursive; */
+  font-family: 'Raleway', sans-serif;
 }
