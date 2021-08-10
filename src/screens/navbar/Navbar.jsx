@@ -14,7 +14,7 @@ function createLinks() {
 
 function Navbar() {
   return (
-    <div className="navbar__container">
+    <div className="navbar__container gb-padding-container" id="#home">
       {createLinks()}
     </div>
   )

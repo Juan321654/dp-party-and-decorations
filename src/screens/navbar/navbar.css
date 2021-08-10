@@ -2,9 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 80%;
-  box-shadow: inset 0px 0px 1px 0px;
-  padding: var(--padding);
+  box-shadow: var(--box-shadow);
 }
 
 .navbar__links a, a:hover, a:focus, a:active{
@@ -14,4 +12,10 @@
 
 .navbar__links a:hover{
   color: var(--color-dark);
+}
+
+@media only screen and (max-width: 400px){
+	.navbar__container {
+    flex-direction: column;
+  }
 }

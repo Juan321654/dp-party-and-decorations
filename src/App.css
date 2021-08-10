@@ -19,6 +19,8 @@
   --color-mid: #D37163;
   --color-dark: #BF5552;
   --padding: 1rem;
+  --box-shadow: inset 0px 0px 1px 0px;
+  --margin: 1rem
 }
 
 body{
@@ -27,4 +29,9 @@ body{
   /* font-family: 'Pacifico', cursive; */
   /* font-family: 'Fredoka One', cursive; */
   font-family: 'Raleway', sans-serif;
+}
+
+.gb-padding-container {
+  width: 80%;
+  padding: var(--padding);
 }

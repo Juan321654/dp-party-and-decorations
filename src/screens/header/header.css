@@ -1,12 +1,10 @@
 .header__container {
   color: white;
   background-color: var(--color-light);
-  padding: var(--padding);
   font-size: 1rem;
   font-family: 'Fredoka One', cursive;
   letter-spacing: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
 }
