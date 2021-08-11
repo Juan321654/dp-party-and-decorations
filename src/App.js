@@ -3,6 +3,7 @@ import './App.css';
 import Header from './screens/header/Header'
 import Navbar from './screens/navbar/Navbar';
 import MidHeader from './screens/midHeader/MidHeader';
+import Examples from './screens/examples/Examples';
 import axios from 'axios'
 
 let key = process.env.REACT_APP_key
@@ -16,7 +17,7 @@ function App() {
     const getData = async() => {
       try {
         const res = await axios.get(url)
-        setData(res)
+        setData(res.data)
       } catch (error) {
         console.log(error)
       }
@@ -29,6 +30,7 @@ function App() {
       <Header />
       <Navbar />
       <MidHeader />
+      <Examples data={data}/>
     </div>
   );
 }

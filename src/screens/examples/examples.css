@@ -1,0 +1,28 @@
+.example__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__container {
+  max-width: 400px;
+  max-height: 550px;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.7rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding);
+  margin: var(--margin);
+  border-radius: 5px;
+}
+
+.card__container > *{
+  margin: 0.5rem 0;
+}
+
+.card__container img {
+  width: 350px;
+  height: 350px;
+  object-fit: scale-down;
+}

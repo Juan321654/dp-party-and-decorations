@@ -20,7 +20,9 @@
   --color-dark: #BF5552;
   --padding: 1rem;
   --box-shadow: inset 0px 0px 1px 0px;
-  --margin: 1rem
+  --margin: 2rem;
+  --white: #FFFFFF;
+  --greyLight-2: #e2dbe8;
 }
 
 body{
