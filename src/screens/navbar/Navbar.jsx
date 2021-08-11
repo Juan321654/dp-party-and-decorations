@@ -5,8 +5,8 @@ import {links} from '../../helpers/links'
 function createLinks() {
   return links.map((e, idx) => {
     return (
-      <div key={idx} className="navbar__links">
-        <a href={e.ref}>{e.name}</a>
+      <div key={idx}>
+        <a href={e.ref} className="navLink">{e.name}</a>
       </div>
     )
   })
