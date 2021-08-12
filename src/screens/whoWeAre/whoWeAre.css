@@ -1,0 +1,5 @@
+.who__container {
+  margin: var(--margin);
+  width: 80%;
+  color: var(--color-dark);
+}
