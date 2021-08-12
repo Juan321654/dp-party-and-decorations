@@ -5,6 +5,7 @@ import Navbar from './screens/navbar/Navbar';
 import MidHeader from './screens/midHeader/MidHeader';
 import Examples from './screens/examples/Examples';
 import WhoWeAre from './screens/whoWeAre/WhoWeAre';
+import Contact from './screens/contact/Contact';
 import axios from 'axios'
 
 let key = process.env.REACT_APP_key
@@ -33,6 +34,7 @@ function App() {
       <MidHeader />
       <WhoWeAre data={data}/>
       <Examples data={data}/>
+      <Contact />
     </div>
   );
 }

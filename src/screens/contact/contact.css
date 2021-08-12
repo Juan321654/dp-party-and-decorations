@@ -1,0 +1,27 @@
+.contact__container {
+  color: white;
+  background-color: var(--color-light);
+  font-size: 1rem;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: var(--padding);
+  margin-top: var(--margin);
+}
+
+.contact__container p {
+  margin: 0;
+}
+
+.contact__links:link,
+.contact__links:visited,
+.contact__container a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact__links:hover,
+.contact__container a:hover {
+  color: var(--color-dark);
+}
