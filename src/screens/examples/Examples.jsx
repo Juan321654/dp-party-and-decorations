@@ -36,7 +36,7 @@ function Examples({ data }) {
         );
     });
   }
-  return <div className="example__container">{createCards()}</div>;
+  return <div className="example__container" id="examples">{createCards()}</div>;
 }
 
 export default Examples;

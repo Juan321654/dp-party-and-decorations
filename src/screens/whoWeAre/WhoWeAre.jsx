@@ -7,7 +7,7 @@ function WhoWeAre({ data }) {
       .filter((e) => e?.fields.who_we_are !== undefined)
       .map((x) => <div>{x.fields.who_we_are}</div>);
   }
-  return <div className="who__container">{renderWho()}</div>;
+  return <div className="who__container" id="who">{renderWho()}</div>;
 }
 
 export default WhoWeAre;
