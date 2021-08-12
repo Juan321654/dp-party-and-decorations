@@ -1,8 +1,10 @@
 import React from "react";
 import "./examples.css";
 import Card from "react-bootstrap/Card";
+import Button from 'react-bootstrap/Button'
 
 function Examples({ data }) {
+  // console.log(data.records)
   function createCards() {
     return data?.records.map((e, idx) => {
       if (e.fields.attachment)
@@ -12,14 +14,14 @@ function Examples({ data }) {
             style={{ width: "20rem", margin: "1.25rem" }}
             className="card-hover"
           >
-            <a href={e.fields.attachment[0].url} target="_blank">
+            <a href={e.fields.attachment[0].url} target="_blank" rel="noreferrer">
               <Card.Img
                 src={e.fields.attachment[0].thumbnails.large.url}
                 alt="party"
                 style={{
                   height: "20rem",
                   objectFit: "scale-down",
-                  backgroundColor: "black",
+                  backgroundColor: "#e6e6e6",
                   cursor: "zoom-in",
                 }}
               />
@@ -32,8 +34,12 @@ function Examples({ data }) {
                 {e?.fields.price}
               </Card.Text>
             </Card.Body>
+            <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+            <Button variant="outline-secondary" style={{width: '50%', margin: '10px'}}>Request info</Button>
+            </div>
           </Card>
         );
+        else return console.log('nothing')
     });
   }
   return <div className="example__container" id="examples">{createCards()}</div>;
