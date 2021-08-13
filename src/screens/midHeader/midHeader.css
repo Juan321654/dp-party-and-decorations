@@ -16,3 +16,9 @@
   color: white;
   font-size: 2rem;
 }
+
+@media only screen and (max-width: 634px){
+	.midHeader__text {
+    text-align: center;
+  }
+}

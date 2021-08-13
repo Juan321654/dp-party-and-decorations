@@ -20,7 +20,7 @@ function Examples({ data }) {
                 alt="party"
                 style={{
                   height: "20rem",
-                  objectFit: "scale-down",
+                  objectFit: "cover",
                   backgroundColor: "#e6e6e6",
                   cursor: "zoom-in",
                 }}
