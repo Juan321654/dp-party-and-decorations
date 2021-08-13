@@ -8,7 +8,7 @@ function MidHeader() {
     <div className="midHeader__container gb-padding-container">
       <img src={ballons} style={{transform: 'scale(2)', filter: 'opacity(0.5)'}} alt="main screen"/>
       <div className="midHeader__text">
-        <p style={{textAlign: 'center'}}><img src={logo} style={{width: '300px'}}/></p> <p>party and decorations</p>
+        <p style={{textAlign: 'center'}}><img src={logo} style={{width: '300px'}} alt="decoration"/></p> <p>party and decorations</p>
       </div>
     </div>
   )
