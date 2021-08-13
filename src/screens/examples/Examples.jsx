@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button'
 function Examples({ data }) {
   // console.log(data.records)
   function createCards() {
-    return data?.records.map((e, idx) => {
+    return data?.map((e, idx) => {
       if (e.fields.attachment)
         return (
           <Card
