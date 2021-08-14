@@ -7,7 +7,7 @@ import Examples from "./screens/examples/Examples";
 import WhoWeAre from "./screens/whoWeAre/WhoWeAre";
 import Contact from "./screens/contact/Contact";
 import axios from "axios";
-import Pagination from "@material-ui/lab/Pagination";
+import ReactPaginate from "react-paginate";
 
 let key = process.env.REACT_APP_key;
 let base = process.env.REACT_APP_base;
@@ -45,21 +45,15 @@ function App() {
     getData();
   }, []);
 
-  function handlePageClick(event, value) {
-    setCurrentPage(value);
+  function handlePageClick({ selected: selectedPage }) {
+    setCurrentPage(selectedPage);
   }
 
-  // console.log(currentPage)
-
   const offset = currentPage * PER_PAGE;
-  // console.log(offset)
 
   const currentPageData = data?.records.slice(offset, offset + PER_PAGE);
 
-  // console.log(currentPageData)
-
   const pageCount = Math.ceil(data?.records.length / PER_PAGE);
-  // console.log(pageCount)
 
   return (
     <div className="App">
@@ -68,11 +62,16 @@ function App() {
       <MidHeader />
       <WhoWeAre data={whoData} />
       <Examples data={currentPageData} />
-      <Pagination
-        count={pageCount}
-        page={currentPage}
-        style={{ marginTop: "1.25rem" }}
-        onChange={handlePageClick}
+      <ReactPaginate
+        previousLabel={"←"}
+        nextLabel={"→"}
+        pageCount={pageCount}
+        onPageChange={handlePageClick}
+        containerClassName={"pagination"}
+        previousLinkClassName={"pagination__link"}
+        nextLinkClassName={"pagination__link"}
+        disabledClassName={"pagination__link--disabled"}
+        activeClassName={"pagination__link--active"}
       />
       <Contact />
     </div>

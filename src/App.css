@@ -37,3 +37,34 @@ body{
   width: 80%;
   padding: var(--padding);
 }
+
+/* ++++++++++++++++++++++++ PAGINATION ++++++++++++++++++++++++++ */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  cursor: pointer;
+  margin-top: 1.25rem;
+}
+
+.pagination a {
+  padding: 1rem;
+  border-radius: 10%;
+  border: none;
+  color: var(--color-light);
+}
+
+.pagination__link {
+  font-weight: bold;
+}
+
+.pagination__link--active a {
+  color: #fff;
+  background: var(--color-light);
+}
+
+.pagination__link--disabled a {
+  color: rgb(198, 197, 202);
+  border: none;
+}
