@@ -12,12 +12,11 @@ import ReactPaginate from "react-paginate";
 let key = process.env.REACT_APP_key;
 let base = process.env.REACT_APP_base;
 
-const PER_PAGE = 10;
-
 function App() {
   const [currentPage, setCurrentPage] = useState(0);
   const [data, setData] = useState();
   const [whoData, setWhoData] = useState();
+  const [perPage, setPerPage] = useState(10);
 
   useEffect(() => {
     let url = `https://api.airtable.com/v0/${base}/content?api_key=${key}`;
@@ -49,11 +48,11 @@ function App() {
     setCurrentPage(selectedPage);
   }
 
-  const offset = currentPage * PER_PAGE;
+  const offset = currentPage * perPage;
 
-  const currentPageData = data?.records.slice(offset, offset + PER_PAGE);
+  const currentPageData = data?.records.slice(offset, offset + perPage);
 
-  const pageCount = Math.ceil(data?.records.length / PER_PAGE);
+  const pageCount = Math.ceil(data?.records.length / perPage);
 
   return (
     <div className="App">
@@ -61,6 +60,26 @@ function App() {
       <Navbar />
       <MidHeader />
       <WhoWeAre data={whoData} />
+      <label style={{ color: "var(--color-light)" }}>Images per page: </label>
+      <select
+        value={perPage}
+        onChange={(e) => setPerPage(e.target.value)}
+        style={{
+          padding: "0.5rem",
+          borderRadius: "6px",
+          marginTop: "1rem",
+          borderColor: "var(--color-light)",
+          color: "var(--color-light)",
+        }}
+      >
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+      </select>
+
       <Examples data={currentPageData} />
       <ReactPaginate
         previousLabel={"←"}
