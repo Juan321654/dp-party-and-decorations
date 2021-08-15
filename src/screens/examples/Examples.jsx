@@ -1,7 +1,6 @@
 import React from "react";
 import "./examples.css";
 import Card from "react-bootstrap/Card";
-import Button from 'react-bootstrap/Button'
 
 function Examples({ data }) {
   // console.log(data.records)
@@ -39,7 +38,7 @@ function Examples({ data }) {
             </div>
           </Card>
         );
-        else return console.log('nothing')
+        else return console.log('JuanCamachopers@hotmail.com for projects')
     });
   }
   return <div className="example__container" id="examples">{createCards()}</div>;
