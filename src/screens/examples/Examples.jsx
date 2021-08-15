@@ -35,7 +35,7 @@ function Examples({ data }) {
               </Card.Text>
             </Card.Body>
             <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-            <Button variant="outline-secondary" style={{width: '50%', margin: '10px'}}>Request info</Button>
+            {/* <Button variant="outline-secondary" style={{width: '50%', margin: '10px'}}>Request info</Button> */}
             </div>
           </Card>
         );
