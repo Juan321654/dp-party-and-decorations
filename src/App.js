@@ -70,6 +70,7 @@ function App() {
           marginTop: "1rem",
           borderColor: "var(--color-light)",
           color: "var(--color-light)",
+          cursor: 'pointer'
         }}
       >
         <option value="10">10</option>

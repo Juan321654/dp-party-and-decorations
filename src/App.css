@@ -60,7 +60,7 @@ body{
 }
 
 .pagination__link--active a {
-  color: #fff;
+  color: #fff !important;
   background: var(--color-light);
 }
 
